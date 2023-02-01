@@ -1,0 +1,541 @@
+@import url("https://fonts.googleapis.com/css2?family=Caramel&family=Dancing+Script:wght@400;500&family=Mochiy+Pop+One&family=Nunito&family=PT+Sans&family=Poppins:ital@0;1&family=Qwitcher+Grypen&family=Rancho&family=Righteous&family=Roboto+Mono:wght@500&family=Rubik+Gemstones&family=Rubik+Puddles&family=Russo+One&family=Satisfy&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+}
+/* navbar start */
+.navbar_main {
+  width: 100%;
+  height: 100px;
+  border: none;
+  border-top: 5px solid;
+  display: flex;
+  justify-content: center;
+}
+.logo_box {
+  width: 11rem;
+  height: 100%;
+}
+.navbar_main img {
+  width: 75%;
+  height: 100%;
+}
+.nav_right_box {
+  width: 78%;
+  height: 100%;
+  position: relative;
+}
+.nav_right_top_box {
+  position: absolute;
+  right: 0;
+  display: flex;
+  justify-content: space-evenly;
+  font-size: 0.9rem;
+  cursor: pointer;
+}
+.nav_right_top_box ul {
+  margin-top: 10px;
+  display: flex;
+  gap: 20px;
+  justify-content: space-evenly;
+  list-style: none;
+}
+.nav_right_btm_box {
+  width: 90%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  align-items: center;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+.nav_right_btm_box>ul {
+  list-style: none;
+  display: flex;
+  font-size: 0.89rem;
+  font-weight: 400;
+  justify-content: space-between;
+}
+.nav_right_btm_box>ul>li {
+  align-items: center;
+}
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-thumb {
+  background-color: #764973;
+  border-radius: 30px;
+}
+/* ///////////first banner////////////////////////////////// */
+.homapage_box {
+  position: relative;
+  width: 100%;
+}
+.first_banner {
+  width: 100%;
+  height: 100vh;
+  margin-top: -8.2rem;
+  top: 0;
+  background-image: url("https://www.marriott.com/content/dam/dme/hero/Q1_GloPro_January2023_AEM_Supersize_Hero_3240x1620.jpg.transform/mcom-hp-transform-2880x1620/image.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+.sticky_box {
+  width: 89%;
+  height: 100px;
+  margin: auto;
+  position: sticky;
+  top: 0rem;
+  background-color: rgb(255, 255, 255);
+  z-index: 1000;
+  margin-top: 30px;
+  padding: 0px 30px 0px 0px;
+  border-radius: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.sticky_box >div {
+  padding-left: 30px;
+  width: 32%;
+  border: 2px solid transparent;
+}
+.sticky_box > :nth-child(1) {
+  border-right: 2px solid grey;
+  border-style: dashed;
+  border-top: none;
+  border-left: none;
+  border-bottom: none;
+}
+.sticky_box>div>input {
+  border: none;
+  font-size: 1.5rem;
+  color: rgba(210, 48, 48, 0.834);
+}
+.sticky_box>div>button {
+  width: 70%;
+  border-radius: 18px;
+  font-weight: 700;
+  font-size: 1.1rem;
+  margin: auto;
+  background-color: black;
+  color: white;
+  padding: 7px 5px;
+  text-align: center;
+}
+.sticky_box > :nth-child(3) {
+  text-align: center;
+}
+.sticky_box p:nth-child(2) {
+  font-size: 1.4rem;
+  color: rgb(114, 114, 114);
+}
+.banner_title {
+  width: 40%;
+  height: 200px;
+  position: absolute;
+  bottom: 10rem;
+  margin-left: 3.5rem;
+  color: white;
+  line-height: 3rem;
+}
+.banner_title>button {
+  padding: 10px 20px;
+  background-color: rgb(255, 255, 255);
+  color: rgb(56, 55, 55);
+  font-weight: 700;
+  letter-spacing: 2px;
+  border: none;
+  border-radius: 30px;
+}
+/* popular offers */
+.popular_offer_box {
+  width: 100%;
+  height: 90vh;
+  background-color: rgb(255, 255, 255);
+  z-index: 10000;
+  overflow: hidden;
+}
+.sub_heading {
+  margin-top: 3rem;
+  padding-left: 1.5rem;
+}
+.pop_slider_box {
+  margin-top: 2rem;
+  width: 100%;
+  height: 24rem;
+  display: flex;
+  overflow-y: hidden;
+  gap: 20px;
+}
+.pop_slider_box::-webkit-scrollbar {
+  display: none;
+}
+.pop_slider_box>div:nth-child(1) {
+  margin-left: 3.5rem;
+}
+.pop_slider_box>div {
+  min-width: 28%;
+  width: 32%;
+  height: 22rem;
+  border-radius: 30px;
+  position: relative;
+  cursor: pointer;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px,
+    rgba(0, 0, 0, 0.22) 0px 10px 10px;
+}
+.pop_slider_box img {
+  width: 100%;
+  height: 100%;
+  border-radius: 30px;
+}
+.pop_inside_box {
+  width: 65%;
+  height: 15rem;
+  background-color: rgb(255, 255, 255);
+  position: absolute;
+  z-index: 2;
+  border-radius: 10px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.pop_inside_box >p {
+  font-size: 0.8rem;
+  margin-top: 4rem;
+  color: grey;
+}
+.pop_inside_box >h3 {
+  width: 70%;
+  font-size: 0.8rem;
+}
+.pop_inside_box >button {
+  padding: 5px 10px;
+  border-radius: 20px;
+  border: none;
+  background-color: black;
+  color: white;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+/* /////////////hottest_hotel_box/////////////// */
+.hottest_hotel_box {
+  width: 100%;
+  height: 100%;
+}
+.sub_heading {
+  margin-left: 3.5rem;
+}
+.hottest_grid_box {
+  width: 86%;
+  height: 85vh;
+  margin: auto;
+  margin-top: 1rem;
+  display: flex;
+  justify-content: space-between;
+}
+.hottest_grid_box >div {
+  width: 32%;
+  position: relative;
+  border-radius: 30px;
+  overflow: hidden;
+  cursor: pointer;
+}
+.hottest_first_box p{
+  font-size: 0.9rem;
+  padding-left: 5px;
+  margin: 5px 0px 10px 0px;
+}
+.hottest_first_box :nth-child(2) {
+  width: 100%;
+  height: 80%;
+  font-size: 0.9rem;
+  border-radius: 30px;
+  overflow: hidden;
+  z-index: 1;
+}
+.hottest_first_box :nth-child(2):hover img {
+  transform: scale(1.1);
+}
+
+.hottest_second_box:hover>img {
+  transform: scale(1.1);
+}
+.hottest_first_box>img {
+  transition: 0.5s ease-in-out;
+  width: 100%;
+  height: 100%;
+  border-radius: 30px;
+  position: relative;
+}
+.hottest_grid_box >div>img {
+  width: 100%;
+  height: 100%;
+  transition: 0.5s ease-in-out;
+}
+.hottest_third_box >div {
+  width: 100%;
+  height: 40.5vh;
+  border-radius: 30px;
+  overflow: hidden;
+}
+.hottest_third_box :nth-child(2) {
+  position: absolute;
+  bottom: 0;
+}
+.hottest_third_box > div>img {
+  width: 100%;
+  height: 100%;
+  border-radius: 30px;
+}
+.hottest_third_box > div:hover >img {
+  transform: scale(1.1);
+}
+/* ///////////////where_will_go_box */
+.where_will_go_box {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  margin-top: 3rem;
+}
+.where_will_go_box >div {
+  width: 100%;
+  height: 100vh;
+}
+
+.where_will_go_box > div>img {
+  width: 100%;
+  height: 100%;
+}
+.sub_wher_will_go {
+  display: flex;
+  margin: auto;
+  width: 90%;
+  height: 50%;
+}
+.box_one {
+  width: 13rem;
+  height: 100%;
+  border-radius: 30px;
+  overflow: hidden;
+}
+.box_two {
+  width: 21rem;
+  height: 100%;
+  text-align: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.box_two >p {
+  color: grey;
+}
+/* slider box */
+.slider_box {
+  width: 100%;
+  height: 100%;
+}
+.slider_box >p {
+  margin-left: 5.5rem;
+  font-size: 0.9rem;
+}
+.slider_main_box {
+  width: 90%;
+  height: 95vh;
+  display: flex;
+  overflow-y: hidden;
+  gap: 20px;
+  padding-left: 3.5rem;
+  margin-top: 2rem;
+}
+.slider_main_box::-webkit-scrollbar {
+  display: none;
+}
+.slider_main_box >div {
+  min-width: 30%;
+  width: 30%;
+  height: 90vh;
+  text-align: center;
+  border-radius: 30px;
+  overflow: hidden;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.slider_main_box >div p {
+  margin-top: 1rem;
+  color: grey;
+}
+.slider_img > img {
+  width: 100%;
+}
+/* bottom banner */
+.btm_banner {
+  width: 100%;
+  height: 100vh;
+  background-image: url("https://www.marriott.com/content/dam/marriott-homepage/brand/LargeBanner_desktop.jpg.transform/mcom-hp-transform-2880x1152/image.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+}
+.gredient {
+  position: absolute;
+  width: 90%;
+  height: 100vh;
+  z-index: 100;
+  background: rgb(0, 0, 0);
+  background: linear-gradient(
+    90deg,
+    rgba(0, 0, 0, 1) 3%,
+    rgba(255, 255, 255, 0.086) 87%,
+    rgba(255, 255, 255, 0) 90%
+  );
+  opacity: 0.8;
+  /* box-shadow: black inset 20px 20px 20px; */
+}
+.banner_title {
+  z-index: 1000;
+}
+
+/* ......four flex... */
+.four_flexbox {
+  width: 90%;
+  height: 17rem;
+  margin: auto;
+  display: flex;
+  justify-content: space-evenly;
+  gap: 15px;
+  margin-top: 2rem;
+}
+.four_flexbox > div {
+  width: 25%;
+  min-width: 20%;
+  height: 15rem;
+  text-align: center;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+.four_flex_img {
+  width: 100%;
+  height: 10rem;
+}
+.four_flexbox > div >p {
+  width: 70%;
+  margin: auto;
+  font-size: 0.8rem;
+  margin-top: 1rem;
+}
+/* //////////career_box//////// */
+.career_box {
+  margin: auto;
+  width: 90%;
+  height: 25rem;
+  border-radius: 30px;
+  display: flex;
+  margin-bottom: 2rem;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
+    rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+.human_img {
+  width: 60%;
+  height: 25rem;
+  overflow: hidden;
+  border-radius: 30px 0px 0px 30px;
+}
+.carrer_detail_box {
+  width: 30%;
+  height: 200px;
+  margin: auto;
+  border-radius: 20px;
+}
+.carrer_detail_box > p {
+  color: grey;
+  margin-top: 1rem;
+}
+.carrer_detail_box > button {
+  color: grey;
+  margin-top: 2rem;
+  padding: 10px 20px;
+  border-radius: 20px;
+  background-color: black;
+  color: white;
+  font-weight: 600;
+}
+/* ...........three_box_section............... */
+.three_box_section {
+  width: 100%;
+  height: 90vh;
+  display: flex;
+  justify-content: space-evenly;
+  background-color: rgba(220, 220, 220, 0.473);
+}
+.three_box_section > div {
+  width: 30%;
+  height: 65vh;
+  border: none;
+  border-right: 1px solid;
+  margin: auto;
+}
+.three_box_section :nth-child(3) {
+  border-right: none;
+}
+.three_box_section h2 {
+  padding-left: 15%;
+  margin-bottom: 2rem;
+}
+.three_box_section > div >ul {
+  padding-left: 15%;
+  list-style: none;
+  line-height: 2.2rem;
+  font-size: 0.8rem;
+}
+.three_box_section > div >ul span {
+  margin-left: 10px;
+}
+/* ///////////////footer_main_box .............*/
+.footer_main_box {
+  width: 100%;
+  height: 85vh;
+  background-color: black;
+  color: white;
+  padding-top: 2rem;
+}
+.footer_three_box {
+  margin: auto;
+  width: 90%;
+  height: 70px;
+  border: none;
+  border-bottom: 1px solid;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.9rem;
+}
+.footer_seclast_box {
+  margin: auto;
+  width: 90%;
+  height: 110px;
+  border: none;
+  border-bottom: 1px solid;
+  display: flex;
+  align-items: center;
+}
+.footer_seclast_box >i {
+  padding-left: 2rem;
+}
+.footer_main_box >p {
+  padding-left: 4rem;
+  font-size: 0.7rem;
+  line-height: 1.7rem;
+}
+.footer_main_box :last-child {
+  color: rgb(151, 151, 151);
+}
